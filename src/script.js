@@ -3,14 +3,16 @@ async function fetchMyDegrees() {
     .then((response) => {
         let data = response.json()
         if(response.status === 200){
-            let index = 1;
-            let degrees = data.degrees
-            degrees.forEach(element => {
-                document.write(
-                    index + '. ${element.type} degree in ${element.major} from ${element.school}, ${element.year_conferred}'
-                )
-                index++;
-            });
+            document.write('Response status is: ' + response.status);
+        }
+    })
+    .then((data) => {
+        let index = 1;
+        for (const degree of data.degrees){
+            document.write(
+                index + '. ${degree.type} degree in ${degree.major} from ${degree.school}, ${degree.year_conferred}'
+            )
+            index++;
         }
     })
 }
