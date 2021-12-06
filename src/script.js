@@ -1,12 +1,10 @@
 async function fetchMyDegrees() {
     await fetch('./src/degrees.json')
     .then((response) => {
-        response.json();
+        let data = response.json();
         if(response.status === 200){
             document.write('Response status is: ' + response.status);
         }
-    })
-    .then(data => {
         let index = 1;
         for (const degree of data.degrees){
             let major = degree.major.toString();
