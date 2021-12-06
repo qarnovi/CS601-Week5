@@ -1,5 +1,5 @@
-function fetchMyDegrees(url) {
-    await fetch(url)
+function fetchMyDegrees() {
+    await fetch('./src/degrees.json')
     .then((response) => {
         let data = response.json()
         if(response.status === 200){
