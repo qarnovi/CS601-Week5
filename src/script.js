@@ -2,7 +2,7 @@ async function fetchMyDegrees() {
     await fetch('./src/degrees.json')
     .then((response) => {
         if(response.status === 200){
-            document.write('Response status is: ' + response.status);
+            document.write('Response status is: ' + response.status + '. ');
         }
         return response.json();
     })
