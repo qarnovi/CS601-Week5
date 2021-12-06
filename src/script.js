@@ -4,6 +4,7 @@ async function fetchMyDegrees() {
         response.json()
     )
     .then(data => {
+        document.write(data.toString() + '\n')
         let index = 1;
         for (const degree of data.degrees){
             document.write(degree.toString() + '\n')
