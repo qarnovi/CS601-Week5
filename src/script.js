@@ -1,4 +1,4 @@
-function fetchMyDegrees() {
+async function fetchMyDegrees() {
     await fetch('./src/degrees.json')
     .then((response) => {
         let data = response.json()
