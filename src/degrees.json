@@ -1,22 +1,22 @@
 {
-    "degrees": [
-        {
-          "school": "Uzbekistan State World Languages University",
-          "major": "German Language and Litirature",
-          "type": "BA",
-          "year_conferred": "2004"
-        },
-        {
-          "school": "Ruhr-University Bochum",
-          "major": "Economics",
-          "type": "BA",
-          "year_conferred": "2007"
-        },
-        {
-          "school": "Boston University",
-          "major": "Computer Information Systems",
-          "type": "MS",
-          "year_conferred": "2022"
-        }
-      ]
-  }
+  "degrees": [
+      {
+        "school": "Uzbekistan State World Languages University",
+        "major": "German Language and Litirature",
+        "type": "BA",
+        "year_conferred": "2004"
+      },
+      {
+        "school": "Ruhr-University Bochum",
+        "major": "Economics",
+        "type": "BA",
+        "year_conferred": "2007"
+      },
+      {
+        "school": "Boston University",
+        "major": "Computer Information Systems",
+        "type": "MS",
+        "year_conferred": "2022"
+      }
+  ]
+}
