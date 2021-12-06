@@ -6,7 +6,7 @@ async function fetchMyDegrees() {
             document.write('Response status is: ' + response.status);
         }
         let index = 1;
-        for (const degree of data.degrees){
+        for (const degree of response.json().degrees){
             let major = degree.major.toString();
             let type = degree.type.toString();
             let school = degree.school.toString();
