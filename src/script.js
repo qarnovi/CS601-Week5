@@ -6,7 +6,7 @@ async function fetchMyDegrees() {
     .then(data => {
         let index = 1;
         for (const degree of data.degrees){
-            document.write(degree + '\n')
+            document.write(degree.toString() + '\n')
             document.write(
                 index + '. ${degree.type} degree in ${degree.major} from ${degree.school}, ${degree.year_conferred}'
             )
